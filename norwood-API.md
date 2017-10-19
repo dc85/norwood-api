@@ -21,7 +21,7 @@
 
    `lastName=[string]`
 
-   `phoneNumber=[string]`
+   `postalCode=[string]`
 
    `optIn=[string]`
 
@@ -36,7 +36,7 @@
   <_What should the status code be on success and is there any returned data? This is useful when people need to to know what their callbacks should expect!_>
 
   * **Code:** 200 <br />
-    **Content:** `{"userId":"USER-SUB-1234","noteId":"f4db15c0-b3e9-11e7-bfdc-959b75ce137a","title":"Mr.","firstName":"Daniel","lastName":"Chen","phoneNumber":"4162501432","email":"daniel@norwoodsolutions.com","optIn":"true","createdAt":1508320307484}`
+    **Content:** `{"userId":"USER-SUB-1234","noteId":"f4db15c0-b3e9-11e7-bfdc-959b75ce137a","title":"Mr.","firstName":"Daniel","lastName":"Chen","postalCode":"M2M2M2","email":"daniel@norwoodsolutions.com","optIn":"true","createdAt":1508320307484}`
 
 * **Error Response:**
 
@@ -52,4 +52,4 @@
 
 * **Sample Call:**
 
-  curl -H "Content-Type: application/json" -X POST -d '{"firstName":"Daniel","lastName":"Chen","title":"Mr.","phoneNumber":"4162501432","email":"daniel@myshyft.com","optIn":"true"}' https://o3krin2rid.execute-api.us-east-1.amazonaws.com/prod/norwood
+  curl -H "Content-Type: application/json" -X POST -d '{"firstName":"Daniel","lastName":"Chen","title":"Mr.","postalCode":"M2M2M2","email":"daniel@myshyft.com","optIn":"true"}' https://o3krin2rid.execute-api.us-east-1.amazonaws.com/prod/norwood
